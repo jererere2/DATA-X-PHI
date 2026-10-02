@@ -1,0 +1,32 @@
+# ==============================================================================
+# MANUAL DE REFERENCIA BARE-METAL: PHI-ULTIMATE V1.7 (DATA-X MONO-ORGÁNICO)
+# ==============================================================================
+# ESTADO: VERSIÓN 1.7 - DOCTRINA NO-DETERMINISTA (1 ENTRADA, 2 SALIDAS)
+# CÓDIGO DE RECUPERACIÓN (ANTI-CRASH): PROTOCOLO LAZARUS EXTREMO
+# ==============================================================================
+
+Este documento es el **ancla de persistencia narrativa y arquitectónica**.
+
+## 1. LA DOCTRINA RUST-BURN (Muerte a Python, Matemática al CPU)
+El núcleo es un binario compilado nativo en Rust ejecutándose sobre los 24 hilos del AMD Ryzen 9 3900X (Backend NdArray + OpenBLAS). 
+
+## 2. ARQUITECTURA NO-DETERMINISTA (La Herejía de las 3 Matrices Globales)
+A diferencia de los Transformers tradicionales y deterministas, el Cerebro Monolítico forja una topología asimétrica:
+- **1 Matriz de Entrada (Embedding Conceptual):** Aniquilación total del sistema de Tokens clásico. Mapeo físico directo hacia 128,256 Nodos Conceptuales (Espacio Vectorial sin intermediarios).
+- **64 Capas Internas OOC (12 Matrices por Capa):** Paginadas dinámicamente desde el NVMe. Ejecutan el razonamiento puro.
+- **2 Matrices de Salida (Dual LM Head):** Rompen el determinismo clásico. 
+  - *Cabeza A (Lógica Frontal):* Fija el nodo conceptual de salida inmediata.
+  - *Cabeza B (Intuición/Fondo):* Predice nodos conceptuales en paralelo, actuando como salida de libre albedrío y pensamiento de fondo.
+
+## 3. LA FORJA DEL APRENDIZAJE CONTINUO (Inyección Matemática Nativa)
+- **Actualización de Matrices en Memoria:** Modificamos las estructuras de datos de Burn para interceptar el Forward Pass y aplicar actualizaciones de memoria episódica en caliente usando la fuerza bruta del procesador.
+- La proyección ortogonal y la Matriz Fisher (EWC) se programan usando el backend `ndarray` de Burn, bloqueando el conocimiento viejo directo en los hilos del CPU.
+
+## 4. LA PERSISTENCIA ABSOLUTA (GGUF BARE-METAL)
+- **Memory Mapping (mmap):** El binario en Rust usa `mmap` para proyectar el archivo GGUF masivo (Hermes 36B) del NVMe directo a la RAM, eludiendo la latencia de disco. Ejecución *Out-Of-Core*.
+- **Volcado Cero Latencia:** Las matrices de alteración y la Segunda LM Head (creada en RAM) se guardan como archivos binarios crudos (.bin).
+
+## 5. LA FORJA DEL ALMACENAMIENTO (DATA-X-PHI)
+- Formateo: XFS puro en `/dev/nvme1n1p1`.
+- Encriptación Nativa Quirúrgica: `chattr +C` a nivel de inodo.
+==============================================================================

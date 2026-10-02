@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATA // CEREBRO CUÁNTICO SODAX</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="console-wrapper">
+        <header class="header">
+            <h1 class="title">DATA <span class="tag">CEREBRO CUÁNTICO SODAX</span></h1>
+            <p class="subtitle">ARCHON-G // HERMES-4.3-36B (BARE-METAL OOC)</p>
+        </header>
+        <section class="chat-container" id="chatContainer">
+            <div class="history-log" id="historyLog"></div>
+            <div class="thinking-indicator" id="thinkingIndicator"><span class="pulsing-dot">●</span> DATA procesando...</div>
+        </section>
+        <footer class="input-panel">
+            <div class="input-row">
+                <textarea id="userInput" rows="2" placeholder="Escribe tu mensaje... (Enter para enviar)" class="input-box"></textarea>
+                <button id="sendBtn" class="btn btn-primary">ENVIAR</button>
+            </div>
+            <div class="actions-row">
+                <span class="status-text" id="statusText">Sincronizado con el núcleo</span>
+                <div class="action-buttons">
+                    <button id="clearBtn" class="btn btn-danger" title="Borrar historial">LIMPIAR MEMORIA</button>
+                    <button id="refreshBtn" class="btn btn-secondary" title="Recargar estado">RECARGAR ESTADO</button>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="mermaid.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Large model files and state
+*.gguf
+*.pt
+state.json
+
+# Compiled binaries and build artifacts
+data_x_phi_core/target/
+vulkan_probe
+vulkan_wave64_runner
+*.spv
+
+# Python caches and logs
+__pycache__/
+*.log
